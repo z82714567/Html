@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>4.Layout 실습</title>
+        <style>
+            * {margin: 0; padding: 0;}
+            ul,ol {list-style: none;}
+            a {text-decoration: none; color: black;}
+            #container {
+                width: 800px;
+                height: auto;
+                background: #aaa;
+                margin: 0 auto;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            header {
+                width: 100%;
+                height: 120px;
+                background: #ccc;
+            }
+            main {
+                overflow: hidden;
+                width: 100%;
+                height: auto;
+                padding: 10px;
+                box-sizing: border-box;
+                margin: 10px 0;
+                background: #ccc;
+
+            }
+            main > aside {
+                float: left;
+                width: 220px;
+                height: 465px;
+               
+                background: #eee;
+            }
+            main > section {
+                float: right;
+                width: 530px;
+                /* article height값 200을 줬기때문에 */
+                height: auto;
+                background: #eee;
+                padding: 10px;
+                box-sizing: border-box;
+                
+
+            }
+            main > section > article {
+                width: 100%;
+                height: 200px;
+                background: #fff;
+                margin-top: 10px;
+                
+            }
+            footer {
+                width: 100%;
+                height: 100px;
+                background: #ccc;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h3>Header</h3>
+            </header>
+            <main>
+                <h3>Main</h3>
+                <section>
+                    <h3>Section</h3>
+                    <article>
+                        <h3>Article #1</h3>
+                    </article>
+                    <article>
+                        <h3>Article #2</h3>
+                    </article>
+                </section>
+                <aside>
+                    <h3>Aside</h3>
+                </aside>
+            </main>
+            <footer>
+                <h3>Footer</h3>
+            </footer>
+        </div>
+    </body>
+</html>

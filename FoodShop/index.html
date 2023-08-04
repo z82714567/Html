@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodShop</title>
+    <style>
+        /* 초기화 */
+    * {
+        margin: 0;
+        padding: 0;
+        font: normal 12px "noto sans korean";
+    }
+    ul, ol {list-style: none;}
+    a {text-decoration: none; color: black;}
+
+    #wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+
+    }
+    header > div {
+        width: 100%;
+        height: auto;
+    }
+    header > div:nth-child(1) {
+        height: 36px;
+        border-bottom: 1px solid gainsboro;
+        box-sizing: border-box;
+    }
+    header > div:nth-child(2) {
+        height: 100px;
+    }
+    header > div:nth-child(3) {
+        height: 54px;
+        background: #40382E;
+    }
+
+    .top {
+        margin: 0 auto;
+        width: 1100px;
+        height: 35px;
+    }
+    header > div > .top > p {
+        float: right;
+        margin-top: 10px;
+    }
+    .ati {
+        margin: 0 auto;
+        width: 1100px;
+        height: 100px;
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div>
+                <div class="top">
+                    <p>
+                        <a href="#">로그인ㅣ</a>
+                        <a href="#">마이페이지ㅣ</a>
+                        <a href="#">관심상품(0)ㅣ</a>
+                        <a href="#">장바구니(0)</a>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <article class="ati">
+                    <a href="#">
+                        <img src="./images/ico_shopping.png" alt="주황트럭">
+                        <span>SHOPPING</span>
+                        <span>주문조회 바로가기</span>
+                    </a>
+                    <a href="#" class="logo">
+                        <img src="./images/header_txt_logo.png" alt="헤더로고">
+                    </a>
+                    <a href="#" class="oneday_txt">
+                        <img src="./images/header_txt_onday.png" alt="헤더원데이">
+                    </a>
+                </article>
+            </div>
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="#">채소/과일/곡류</a></li>
+                        <li><a href="#">수산</a></li>
+                        <li><a href="#">정육/달걀</a></li>
+                        <li><a href="#">면/양념/소스</a></li>
+                        <li><a href="#">음료/주류</a></li>
+                        <li><a href="#">냉장/냉동식품</a></li>
+                        <li><a href="#">캔/통조림</a></li>
+                        <li><a href="#">가공/간편식품</a></li>
+                        <li><a href="#">생활잡화</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="slider">
+                <article>
+                    <ul>
+                        <li><img src="./images/slider_banner1.jpg" alt="슬라이더배너1"></li>
+                    </ul>
+                </article>
+            </section>
+            <section class="go">
+                <article>
+                    <div class="banner banner1">
+                        <a><img src="./images/main_go_banner_bg1.jpg" alt="고배너1"></a>
+                    </div>
+                    <div class="banner banner2">
+                        <a><img src="./images/main_go_banner_bg2.jpg" alt="고배너2"></a>
+                    </div>
+                    <div class="banner banner3">
+                        <a><img src="./images/main_go_banner_bg3.jpg" alt="고배너3"></a>
+                    </div>
+                    <div class="banner banner4">
+                        <a><img src="./images/main_go_banner_bg4.jpg" alt="고배너4"></a>
+                    </div>
+                    <div class="banner banner5">
+                        <a><img src="./images/main_go_banner_bg5.jpg" alt="고배너5"></a>
+                    </div>
+                </article>
+            </section>
+            <section class="oneday">
+                <article>
+                    <a><img src="./images/oneday_txt.png" alt="메인원데이문구"></a>
+                </article>
+            </section>
+            <section class="vegetable">
+                <article>
+                    <img src="./images/vegetable_tit.png" alt="메인베지터블문구">
+                    <ul class="thumb_rolling">
+                        <li>
+                            <a href="#">
+                                <img src="./images/thumb1.jpg" alt="요거트">
+                                <h1>플레인요거트 4개입</h1>
+                                <p>견과류, 과일과 같이 먹는 플레인 요거트</p>
+                                <h2>7,500원</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/thumb2.jpg" alt="커피">
+                                <h1>프랑스 더치커피</h1>
+                                <p>프랑스만의 방식으로 내려진 더치커피</p>
+                                <h2>5,000원</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/thumb3.jpg" alt="홍차">
+                                <h1>로얄밀크 홍차</h1>
+                                <p>일본에서 온 깊고 풍부한맛의 로얄밀크티</p>
+                                <h2>17,000원</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/thumb4.jpg" alt="핫초코">
+                                <h1>스위스 핫초코 320g</h1>
+                                <p>스위스에서 온 핫초코로 따뜻한 연말</p>
+                                <h2>4,000원</h2>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="all">전체 상품 보기</a>
+                </article>
+            </section>
+            <section class="premium">
+                <article>
+                    <a><img src="./images/main_premium_tit.png" alt="상품소개문구"></a>
+                </article>
+            </section>
+            <section class="seafood">
+                <article>
+                    <img src="./images/seafood_tit.png" alt="메인수산물문구">
+                    <ul class="thumb_rolling">
+                        <li>
+                            <a href="#">
+                                <img src="./images/thumb1.jpg" alt="요거트">
+                                <h1>플레인요거트 4개입</h1>
+                                <p>견과류, 과일과 같이 먹는 플레인 요거트</p>
+                                <h2>7,500원</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/thumb2.jpg" alt="커피">
+                                <h1>프랑스 더치커피</h1>
+                                <p>프랑스만의 방식으로 내려진 더치커피</p>
+                                <h2>5,000원</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/thumb3.jpg" alt="홍차">
+                                <h1>로얄밀크 홍차</h1>
+                                <p>일본에서 온 깊고 풍부한맛의 로얄밀크티</p>
+                                <h2>17,000원</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/thumb4.jpg" alt="핫초코">
+                                <h1>스위스 핫초코 320g</h1>
+                                <p>스위스에서 온 핫초코로 따뜻한 연말</p>
+                                <h2>4,000원</h2>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="all">전체 상품 보기</a>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <div>
+                    <p>
+                        <a href="#">이용약관</a>
+                        <a href="#">이용안내</a>
+                        <a href="#">개인정보취급방침</a>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="info">
+                        상호명 : 쇼핑몰  대표 : 홍길동  메일 : master@foodshop.com <br>
+                        통신판매업신고번호 : 123-456-7890  사업자등록번호 : 123-45-7890  대표번호 : 070-1234-5678 <br>
+                        팩스번호 : 051-1234-5678  개인정보관리자 : 김유신  주소 : 부산시 부산진구 서전로 123
+                    </p>
+                    <img src="./images/footer_tel.png" alt="푸터전화번호" class="tel">
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
