@@ -183,7 +183,9 @@ main {
     
 }
 #tabMenu > section ol {}
-#tabMenu > section ol > li {}
+#tabMenu > section ol > li {
+    display: inline;
+}
 #tabMenu > section ol a {}
 #tabMenu > section ol img {}
 
